@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const { base, text } = colors;
 
 export default function Carousel(props) {
-  console.log(props);
   return (
     <div className={props.active}>
       <div className='container-img'>
@@ -14,8 +13,8 @@ export default function Carousel(props) {
 
       <div className='container'>
         <div className={props.position}>
-          <h1>{props.title}</h1>
-          <p>{props.text}</p>
+          <h1 style={{ color: "black" }}>{props.title}</h1>
+          <p style={{ color: "black" }}>{props.text}</p>
           <p>
             <Link
               className='btn btn-lg'

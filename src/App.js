@@ -1,11 +1,12 @@
 import React from "react";
 import Router from "./router/Router";
+import { Auth } from "./context";
 
 function App() {
   return (
-    <div>
+    <Auth>
       <Router />
-    </div>
+    </Auth>
   );
 }
 

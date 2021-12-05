@@ -7,7 +7,9 @@ export default function NavBar() {
   return (
     <nav
       className='navbar navbar-expand-lg navbar-dark'
-      style={{ backgroundColor: base }}
+      style={{
+        backgroundColor: base,
+      }}
     >
       <div className='container-fluid'>
         <Link className='navbar-brand' to='#'>
@@ -28,12 +30,12 @@ export default function NavBar() {
           <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
             <li className='nav-item'>
               <Link className='nav-link active' aria-current='page' to='/'>
-                Home
+                Lista de imoveis
               </Link>
             </li>
             <li className='nav-item'>
               <Link className='nav-link' to='#'>
-                Link
+                Contatos
               </Link>
             </li>
           </ul>
@@ -44,7 +46,7 @@ export default function NavBar() {
               placeholder='Search'
               aria-label='Search'
             />
-            <button className='btn btn-outline-success' type='submit'>
+            <button className='btn btn-outline-danger' type='submit'>
               Search
             </button>
           </form>

@@ -8,7 +8,7 @@ import "./style/header.css";
 
 import img1 from "../../img/img1.jpg";
 import img2 from "../../img/img2.jpg";
-import img3 from "../../img/img2.jpg";
+import img3 from "../../img/img3.jpg";
 
 export default function Header() {
   return (
@@ -29,33 +29,27 @@ export default function Header() {
             active={"carousel-item active"}
             position={"carousel-caption text-start"}
             img={img1}
-            title={"Example headline."}
-            text={
-              "Some representative placeholder content for the first slide of the carousel."
-            }
-            textButton={"Sign up today"}
+            title={"Melhores Imóveis em SP"}
+            text={"Imóveis e Apartamentos à venda em SP ."}
+            textButton={"Fale com o corretor"}
           />
 
           <Carousel
             active={"carousel-item"}
             position={"carousel-caption"}
             img={img2}
-            title={"Another example headline."}
-            text={
-              "Some representative placeholder content for the first slide of the carousel."
-            }
-            textButton={"Learn more"}
+            title={"Visite Decorado"}
+            text={"Lançamento e abertira do decorado neste final de semana."}
+            textButton={"Fale com o corretor"}
           />
 
           <Carousel
             active={"carousel-item"}
             position={"carousel-caption text-end"}
             img={img3}
-            title={"One more for good measure."}
-            text={
-              "Some representative placeholder content for the first slide of the carousel."
-            }
-            textButton={"Browse gallery"}
+            title={"Lazer incomparavel"}
+            text={"Fácil de pagar,fácil de chagar."}
+            textButton={"Fale com o corretor"}
           />
         </div>
         <ControlCaurosel />
