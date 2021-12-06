@@ -26,6 +26,7 @@ export default function CardsImg() {
                             </div>
                             <div className='text-container'>
                               <h6>{item.title}</h6>
+                              <h5>ID: {item._id}</h5>
                               <p>{item.description}</p>
                             </div>
                           </div>
@@ -48,6 +49,7 @@ export default function CardsImg() {
                             </div>
                             <div className='text-container'>
                               <h6>{item.title}</h6>
+                              <h5>ID: {item._id}</h5>
                               <p>{item.description}</p>
                             </div>
                           </div>
@@ -70,6 +72,7 @@ export default function CardsImg() {
                             </div>
                             <div className='text-container'>
                               <h6>{item.title}</h6>
+                              <h5>ID: {item._id}</h5>
                               <p>{item.description}</p>
                             </div>
                           </div>

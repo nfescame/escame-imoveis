@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import colors from "../colors/colors";
+import colors from "../../colors/colors";
 
 export default function NavBar() {
   const { base } = colors;
@@ -29,14 +29,15 @@ export default function NavBar() {
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
             <li className='nav-item'>
-              <Link className='nav-link active' aria-current='page' to='/'>
-                Lista de imoveis
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link' to='#'>
+              <p
+                style={{ paddingTop: "22px" }}
+                data-bs-toggle='tooltip'
+                data-bs-placement='bottom'
+                title='+55 (11)93203-2703'
+                className='nav-link'
+              >
                 Contatos
-              </Link>
+              </p>
             </li>
           </ul>
           <form className='d-flex'>

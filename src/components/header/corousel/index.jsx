@@ -1,10 +1,18 @@
 import React from "react";
-import colors from "../../colors/colors";
-import { Link } from "react-router-dom";
+import colors from "../../../colors/colors";
+
+import { AuthContext } from "../../../context/index";
 
 const { base, text } = colors;
 
 export default function Carousel(props) {
+  const data = React.useContext(AuthContext);
+  const { setContact } = data;
+
+  function handleClick() {
+    setContact(true);
+  }
+
   return (
     <div className={props.active}>
       <div className='container-img'>
@@ -16,13 +24,13 @@ export default function Carousel(props) {
           <h1 style={{ color: "black" }}>{props.title}</h1>
           <p style={{ color: "black" }}>{props.text}</p>
           <p>
-            <Link
+            <button
+              onClick={handleClick}
               className='btn btn-lg'
-              to='#'
               style={{ backgroundColor: base, color: text }}
             >
               {props.textButton}
-            </Link>
+            </button>
           </p>
         </div>
       </div>

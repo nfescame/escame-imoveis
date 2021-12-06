@@ -7,12 +7,9 @@ import { AuthContext } from "../../context/index";
 export default function Abas() {
   const data = React.useContext(AuthContext);
   const { setSelect } = data;
-  console.log(data);
 
   function handleSelect(e) {
-    console.log(e.target.name);
     setSelect(e.target.name);
-    console.log(data);
   }
   return (
     <div

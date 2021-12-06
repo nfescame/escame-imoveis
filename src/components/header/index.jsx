@@ -1,10 +1,10 @@
 import React from "react";
 
-import ButtonHeader from "./ButtonHeader";
-import Carousel from "./Carousel";
-import ControlCaurosel from "./ControlCarousel";
+import ButtonHeader from "./buttonHeader";
+import Carousel from "./corousel";
+import ControlCaurosel from "./carouselControl";
 
-import "./style/header.css";
+import "./style.css";
 
 import img1 from "../../img/img1.jpg";
 import img2 from "../../img/img2.jpg";
